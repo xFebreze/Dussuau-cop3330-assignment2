@@ -25,9 +25,9 @@ public class App24 {
 
     public static String OutputGen(boolean bool, String w1, String w2){
         if(bool){
-            return w1 + " and " + w2 + "are anagrams";
+            return w1 + " and " + w2 + " are anagrams";
         }else{
-            return w1 + " and " + w2 + "are not anagrams";
+            return w1 + " and " + w2 + " are not anagrams";
         }
     }
 }
