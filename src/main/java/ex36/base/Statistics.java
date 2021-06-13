@@ -44,7 +44,7 @@ public class Statistics {
         System.out.println("\nThe average is "+avg(list));
         System.out.println("The minimum is "+min(list));
         System.out.println("The maximum is "+max(list));
-        System.out.printf("The Standard deviation is %.2f",std(list));
+        System.out.printf("The Standard deviation is %f",std(list));
     }
 
     public static double avg(List<Integer> list){

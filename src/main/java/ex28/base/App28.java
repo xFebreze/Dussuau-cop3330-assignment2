@@ -10,11 +10,17 @@ public class App28 {
     static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args){
+        int ans = loop();
+        System.out.println("The total is " + ans + ".");
+    }
+
+    public static int loop(){
         int ans = 0;
         for(int i = 0; i < 5; i++){
             ans += ReadInput();
         }
-        System.out.println("The total is " + ans + ".");
+
+        return ans;
     }
 
     public static int ReadInput(){

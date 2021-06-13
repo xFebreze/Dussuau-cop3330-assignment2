@@ -18,15 +18,17 @@ public class App33 {
         magicBall(num);
     }
 
-    public static void magicBall(int num){
+    public static String magicBall(int num){
+        String ret = "";
         if(num == 0){
-            System.out.println("Yes");
+            ret += "Yes";
         }else if(num == 1){
-            System.out.println("No");
+            ret += "No";
         }else if(num == 2){
-            System.out.println("Maybe");
+            ret += "Maybe";
         }else if(num == 3){
-            System.out.println("Ask again later.");
+            ret += "Ask again later.";
         }
+        return ret;
     }
 }
