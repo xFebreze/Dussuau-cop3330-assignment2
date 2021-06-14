@@ -1,4 +1,4 @@
-package ex39.base;
+package ex40.base;
 /*
  *  UCF COP3330 Summer 2021 Assignment 2 Solution
  *  Copyright 2021 Dussuau Alek
@@ -8,11 +8,11 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class App39 {
+public class App40 {
 
     public static void main(String[] args){
 
-        SortingRecords sr = new SortingRecords();
+         Searcher sr = new Searcher();
 
         Map<String, String> map1 = MapMaker("John","Johnson","Manager","2016-12-31");
         Map<String, String> map2 = MapMaker("Tou","Xiong","Software Engineer","2016-10-05");
@@ -23,7 +23,7 @@ public class App39 {
 
         List<Map<String, String>> list = ListMaker(map1,map2,map3,map4,map5,map6);
 
-        sr.sortingRecords(list);
+        sr.searcher(list);
     }
 
     public static Map MapMaker(String FName, String LName, String Pos, String Date){
@@ -45,5 +45,4 @@ public class App39 {
         list.add(m6);
         return list;
     }
-
 }
