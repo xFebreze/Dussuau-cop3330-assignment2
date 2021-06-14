@@ -1,5 +1,8 @@
 package ex29;
-
+/*
+ *  UCF COP3330 Summer 2021 Assignment 2 Solution
+ *  Copyright 2021 Dussuau Alek
+ */
 import ex29.base.BadInput;
 import org.junit.jupiter.api.Test;
 

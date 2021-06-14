@@ -1,5 +1,8 @@
 package ex27;
-
+/*
+ *  UCF COP3330 Summer 2021 Assignment 2 Solution
+ *  Copyright 2021 Dussuau Alek
+ */
 import ex27.base.Validator;
 import org.junit.jupiter.api.Test;
 

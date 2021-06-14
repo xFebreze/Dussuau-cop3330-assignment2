@@ -1,5 +1,8 @@
 package ex38;
-
+/*
+ *  UCF COP3330 Summer 2021 Assignment 2 Solution
+ *  Copyright 2021 Dussuau Alek
+ */
 import ex38.base.ConvertAndFilter;
 import org.junit.jupiter.api.Test;
 
