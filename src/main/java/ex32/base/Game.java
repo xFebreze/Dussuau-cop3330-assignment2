@@ -9,6 +9,7 @@ public class Game {
     static Scanner input = new Scanner(System.in);
 
     public static void game(){
+        String play_temp = "";
         boolean play = true;
         while(play) {
             double temp = Math.random() * difficulty();
@@ -16,17 +17,16 @@ public class Game {
             int count = gameLoop(RNum);
             String output = "You got it in " + count + " guess!\n";
             System.out.println(output);
-            play = playAgain();
+            System.out.print("Do you wish to play again (Y/N)");
+            play_temp = input.next();
+            play = playAgain(play_temp);
         }
     }
 
-    public static boolean playAgain(){
-        String play_temp = "";
-        System.out.print("Do you wish to play again (Y/N)");
-        play_temp = input.next();
-        if(play_temp.equals("Y") || play_temp.equals("y")){
+    public static boolean playAgain(String ans){
+        if(ans.equals("Y") || ans.equals("y")){
             return true;
-        }else if(play_temp.equals("N") || play_temp.equals("n")){
+        }else if(ans.equals("N") || ans.equals("n")){
             return false;
         }else {
             return false;

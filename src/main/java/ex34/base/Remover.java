@@ -7,11 +7,8 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Remover {
-    public static List<String> nameRemover(List<String> nameList){
-        Scanner input = new Scanner(System.in);
 
-        System.out.print("\nEnter an employee name to remove: ");
-        String removeName = input.nextLine();
+    public static List<String> nameRemover(List<String> nameList, String removeName){
 
         nameList.remove(removeName);
 

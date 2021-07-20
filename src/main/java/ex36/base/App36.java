@@ -15,6 +15,7 @@ public class App36 {
         List<Integer> myList = new ArrayList();
         Statistics STATS = new Statistics();
 
+        System.out.println("After entering all numbers type \"done\" ");
         while(condition){
             condition = STATS.numList(myList);
         }

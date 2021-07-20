@@ -19,11 +19,13 @@ public class App39 {
         Map<String, String> map3 = MapMaker("Michaela","Michaelson","District Manager","2015-12-19");
         Map<String, String> map4 = MapMaker("Jake","Jacobson","Programmer","");
         Map<String, String> map5 = MapMaker("Jacquelyn","Jackson","DBA","");
-        Map<String, String> map6 = MapMaker("Sally","Webber","Web Developer","2015-12-18");
+        Map<String, String> map6 = MapMaker("Sally","Weber","Web Developer","2015-12-18");
 
         List<Map<String, String>> list = ListMaker(map1,map2,map3,map4,map5,map6);
 
-        sr.sortingRecords(list);
+        List<String> lastnameList = sr.sortingRecords(list);
+
+        sr.printSortedRecords(list,lastnameList);
     }
 
     public static Map MapMaker(String FName, String LName, String Pos, String Date){

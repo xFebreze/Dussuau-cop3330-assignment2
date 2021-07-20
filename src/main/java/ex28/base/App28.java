@@ -10,14 +10,20 @@ public class App28 {
     static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args){
-        int ans = loop();
+        int nums[] = new int[5];
+        int ans = loop(nums);
+
+        for (int i = 0 ;i < 5; i++){
+            nums[i] = ReadInput();
+        }
+
         System.out.println("The total is " + ans + ".");
     }
 
-    public static int loop(){
+    public static int loop(int[] nums){
         int ans = 0;
         for(int i = 0; i < 5; i++){
-            ans += ReadInput();
+            ans += nums[i];
         }
 
         return ans;

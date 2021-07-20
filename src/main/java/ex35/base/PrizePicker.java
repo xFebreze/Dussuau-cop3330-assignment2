@@ -8,17 +8,12 @@ import java.util.Scanner;
 
 public class PrizePicker {
 
-    public static boolean listAdder(List<String> kekw){
-        Scanner input = new Scanner(System.in);
-
-        System.out.print("Enter a name: ");
-        String tempName = input.nextLine();
-
-        if(tempName.equals("")){
+    public static boolean listAdder(List<String> kekw, String str){
+        if(str.equals("")){
             pickWinner(kekw);
             return false;
         }else{
-            kekw.add(tempName);
+            kekw.add(str);
         }
         return true;
     }

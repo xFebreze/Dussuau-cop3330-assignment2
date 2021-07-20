@@ -10,7 +10,7 @@ import java.util.Map;
 
 public class SortingRecords {
 
-    public static void sortingRecords(List<Map<String,String>> list){
+    public static List<String> sortingRecords(List<Map<String,String>> list){
 
         List<String> lastnameList = new ArrayList<>();
 
@@ -20,7 +20,7 @@ public class SortingRecords {
 
         Collections.sort(lastnameList);
 
-        printSortedRecords(list, lastnameList);
+        return lastnameList;
     }
 
     public static void printSortedRecords(List<Map<String,String>> list, List<String> lastnameList){

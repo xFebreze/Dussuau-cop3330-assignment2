@@ -5,6 +5,7 @@ package ex35.base;
  */
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class App35 {
     static boolean condition = true;
@@ -12,9 +13,12 @@ public class App35 {
     public static void main(String[] args){
         List<String> myList = new ArrayList<>();
         PrizePicker PP = new PrizePicker();
+        Scanner input = new Scanner(System.in);
 
         while(condition){
-            condition = PP.listAdder(myList);
+            System.out.print("Enter a name: ");
+            String tempName = input.nextLine();
+            condition = PP.listAdder(myList, tempName);
         }
     }
 }
